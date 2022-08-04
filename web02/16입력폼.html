@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16입력폼.html</title>
+</head>
+<body>
+    <h1>HTML5에 추가된 입력양식</h1>
+    <fieldset>
+        <legend>:::회원가입:::</legend>
+        <form action="join" method="get">
+            <label for="myemail">
+                이메일:
+            </label>
+            <input type="email" name="email" id="myemail" multiple required>
+            <!-- type을 email로 지정하면 자바스크립트를 사용 안하고도 이메일 형식에
+			맞는지 간단히 처리 가능함. submit버튼이 눌러지면 이메일 형식에 맞지 않을 경우
+			풍선말로 에러 메시지를 출력한다.
+			multiple속성을 추가하면 콤마(,)로 연결하여 이메일을 여러 개 입력 가능하다.
+			required속성을 추가하면 필수로 입력해야 함을 의미한다.
+		    -->
+            <p></p>
+            <label for="homeapge">홈페이지:</label>
+            <input type="url" name="homepage" id="homepage" placeholder="URL형식으로 기술하세요">
+            <!-- url 형식이 아니면 에러 메시지 출력 -->
+            <p></p>
+            <label for="birth">생년월일</label>
+            <input type="date" name="birth" id="birth" min="2022-01-01" max="2022-12-31">
+            <p></p>
+            <label for="birthtime">시분초</label>
+            <input type="time" name="birthtime" id="birthtime">
+            <p></p>
+            <label for="phone">연락처</label>
+        <input type="tel" name="phone" id="phone">
+        <!-- type을 tel로 지정하면 url, email 과는 달리 전화번호 형식에 맞지 않는다고
+		에러를 출력하지는 않는다. 다만 모바일 기기에서 이 형식을 사용할 경우 숫자 패드가
+		나타나 입력을 받는다.-->
+        </p>    
+
+        <p>
+            <label for="cr">좋아하는 색상</label> 
+            <input type="color" name="cr" id="cr" value="#ff0000">
+        </p>
+        <p>
+            <label for="age">나이</label>
+            <input type="number" name="age" id="age" min="19" max="130" step="1">
+        </p>
+        <p>
+            <label for="rgb">RGB범위</label>
+            <input type="range" name="rgb" id="rgb" min="0" max="255">
+        </p>
+            <button>회원가입</button>
+            <!-- 디폴트가 submit기능을 갖는다-->
+            <button type="reset">다시쓰기</button>
+            <button type="button">일반버튼</button>
+            <input type="image" src="images/login.png" width="150px" height="30px">
+            <!-- input type="image" 는 submit 기능을 갖는다. -->
+        </form>
+    </fieldset>
+    
+</body>
+</html>
+<!-- 16입력폼.html -->

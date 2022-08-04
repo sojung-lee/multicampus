@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 10테이블병합.html -->
+<html>
+    <head>
+        <title>10테이블병합.html</title>
+    </head>
+    <body>
+        <h1>열병합 (colspan속성)</h1>
+        <!-- 3행3열 테이블 -->
+        <table border="1" width="300">
+            <tr>
+                <td>1,1</td>
+                <td colspan="2">1,2</td>
+                <!-- <td>1,3</td> -->
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+                <td colspan="3">3,1</td>
+                <!-- <td>3,2</td>
+                <td>3,3</td> -->
+            </tr>
+        </table>
+
+        <hr color="red">
+        <h1>행병합 (rowspan속성)</h1>
+        <table border="1" width="300">
+            <tr>
+                <td rowspan="2">1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+            </tr>
+            <tr>
+                <!-- <td>2,1</td> -->
+                <td>2,2</td>
+                <td rowspan="2">2,3</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,2</td>
+                <!-- <td>3,3</td> -->
+            </tr>
+        </table>
+    </body>
+</html>

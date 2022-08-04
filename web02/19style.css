@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 19style.css */
+body{
+    color:navy;
+    font-size: 1.2em; 
+    /*1em: 16px
+      1.2em:   16px 의 1.2배 큰 사이즈
+    */
+}
+/* div에 대해 정의
+서체: 궁서체
+글자색: 알아서
+바깥여백:20px
+*/
+div{
+    font-family: 궁서체 sans-serif;
+    color:maroon;
+    margin: 20px;
+    background-color: aquamarine;
+    padding:1em;
+}

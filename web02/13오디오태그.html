@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13오디오태그.html</title>
+</head>
+<body>
+    <h1>오디오 재생</h1>
+    <audio src="audios/I_Have_A_Dream.mp3" controls></audio>
+    <!-- 
+	mp3 (크롬, 사파리)
+	ogg (크롬, 오페라, 파이어폭스)
+	wav (크롬, 오페라, 파이어폭스, 사파리)
+
+	IE의 경우, 버전 9 이전에는 audio태그를 아예 지원하지 않음
+				embed태그를 이용함
+  -->
+  <hr>
+  <audio controls preload="auto" autoplay="autoplay" loop="2">
+    <source src="audios/Ob-La-Di Ob-La-Da.ogg" type="audio/ogg">
+    <source src="audios/Ob-La-Di Ob-La-Da.mp3" type="audio/mp3">
+    <source src="audios/Ob-La-Di Ob-La-Da.wav" type="audio/wav">
+    오디오가 지원되지 않는 브라우저입니다
+  </audio>
+
+
+</body>
+</html>
+<!-- 13오디오태그.html -->
